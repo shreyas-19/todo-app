@@ -2,7 +2,7 @@ import './App.css';
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import { Wrapper } from './App.styles'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Add from './Add/Add'
 import Grid from '@material-ui/core/Grid'
 import List from './List/List';
@@ -41,10 +41,6 @@ function App() {
         }
       }, [] as ListItemType[]))
   }
-
-  useEffect(() => {
-    console.log('in app.ts',todoList);
-  }, [todoList])
 
   return (
     <Wrapper>
